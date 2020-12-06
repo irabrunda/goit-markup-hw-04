@@ -91,13 +91,16 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
+.contacts .item {
+    display: inline-flex;
+    text-decoration: none;
+}
 .contacts .item + .item {
     margin-left: 30px;
 }
 .contacts .mail-top {
-    text-decoration: none;
-    display: flex;
+    /* text-decoration: none;
+    display: flex; */
 
     font-style: normal;
     font-weight: 500;
@@ -107,7 +110,7 @@ a {
     color: var(--secondary-text-color);
 }
 .contacts .tel-top {
-    display: flex;
+    /* display: flex; */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -115,34 +118,23 @@ a {
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 }
-
-/* ІКОНКИ НА КОНТАКТИ В ХЕДЕРІ!!!!! */
-
-.contacts .item::before {
-    content: "";
-    display: inline-flex;
+.contacts-icon {
+    margin-right: 10px;
+    padding: 0;
+    background-size: contain;
+    color: inherit;
+}
+.contacts .mail {
     width: 16px;
     height: 12px;
-    margin-right: 10px;
-
-    background-image: url(./images/icons/envelope.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: auto;
 }
-.contacts .tel-top::before {
-    content: "";
-    display: block;
-    height: 16px;
+.contacts .tel {
     width: 10px;
-    margin-right: 10px;
-
-    background-image: url(./images/icons/smartphone.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: auto;
+    height: 16px;
 }
-/* ІКОНКИ НА КОНТАКТИ В ХЕДЕРІ!!!!! */
+.contacts.mail:hover {
+    color: var(--accent-color);
+}
 
 .mail-top:hover,
 .mail-top:focus {
@@ -198,6 +190,7 @@ a {
 
     letter-spacing: 0.06em;
     color: var(--light-color);
+    cursor: pointer;
 }
 /* Герой конец*/
 
@@ -421,8 +414,11 @@ a {
 .icon .twitter-icon {
     fill: currentColor;
 }
-
 /* Наша команда конец*/
+
+
+
+
 
 /* Постоянные клиенты */
 .clients {
@@ -463,16 +459,38 @@ a {
     content: "";
     width: 168px;
     height: 88px;
-    border-radius: 50%;
     text-align: center;
-
-    background-image: url(./images/icons/twitter-grey.svg);
+    
     background-color: var(--primary-background-color);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+}
+.link-svg .logo-one {
+    width: 44.27px;
+    height: 49.23px;
+}
+.link-svg .logo-two {
+    width: 40px;
+    height: 52px;
+}
+.link-svg .logo-three {
+    width: 41px;
+    height: 42.6px;
+}
+.link-svg .logo-four {
+    width: 79.66px;
+    height: 42.02px;
+}
+.link-svg .logo-five {
+    width: 59px;
+    height: 47px;
+}
+.link-svg .logo-six {
+    width: 88.48px;
+    height: 45.44px;
 }
 .clients-img .item:hover,
 .clients-img .item:focus {
@@ -524,7 +542,7 @@ a {
 }
 /* Соцсети Футер */
 .social-links {
-    display: inline-block;
+    display: block;
     margin-left: 70px;
 }
 .social-links h3 {
@@ -539,6 +557,7 @@ a {
     color: var(--light-color);
 }
 .smm-icons {
+    display: inline-flex;
     margin: 0;
     padding: 0;
 }
@@ -547,19 +566,7 @@ a {
 }
 .smm-icons li {
     list-style: none;
-    display: inline-block;
-}
-.smm-icons .insta {
-    background-image: url(./images/icons/instagram-white.svg);
-}
-.smm-icons .twitter {
-    background-image: url(./images/icons/twitter-white.svg);
-}
-.smm-icons .fb {
-    background-image: url(./images/icons/facebook-white.svg);
-}
-.smm-icons .linkedin {
-    background-image: url(./images/icons/linkedin-white.svg);
+    display: inline-flex;
 }
 .smm-icons a {
     display: inline-block;
@@ -569,13 +576,18 @@ a {
     background-color: rgba(255, 255, 255, 0.1);
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
+    background-position: auto;
     border-radius: 50%;
+}
+.footer-icon {
+    width: 20px;
+    height: 20px;
 }
 .smm-icons a:hover,
 .smm-icons a:focus {
     background-color: var(--accent-color);
 }
+
 /* Соцсети Футер конец*/
 
 /* Футер конец */
