@@ -215,7 +215,7 @@ a {
 .features-list .item + .item {
     margin-left: 30px;
 }
-.features-list .item::before {
+/* .features-list .item::before {
     content: "";
     display: block;
     height: 120px;
@@ -224,10 +224,8 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--inactive-filter-color);    
-}
-.item.details::before {
-    background-image: url(./images/icons/antenna-1.svg);
-}
+} 
+
 .item.time::before {
     background-image: url(./images/icons/clock-1.svg);
 }
@@ -237,6 +235,8 @@ a {
 .item.modern-tech::before {
     background-image: url(./images/icons/astronaut-1.svg);
 }
+*/
+
 .features li {
     list-style: none;
     max-width: 270px;
@@ -259,6 +259,26 @@ a {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+/* ИКОНКИ ИЗ СПРАЙТА */
+.feature-icon-div {
+    display: block;
+    padding: 0;
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--inactive-filter-color);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+.feature-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+/* ИКОНКИ ИЗ СПРАЙТА конец */
+
 /* Особенности конец*/
 
 
