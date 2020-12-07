@@ -366,18 +366,19 @@ a {
 .team-social .link + .link {
     margin-left: 10px;
 }
-
-.social-icon-a {
+.link .social-icon {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     padding: 0;
     border: none;
+    color: var(--icon-primary);
 }
 .team-social-icon {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    fill: var(--icon-primary)
+    fill: currentColor;
 }
 
 .team-social li {
@@ -394,23 +395,14 @@ a {
     background-size: auto;
     background-position: center;
 }
-
 .team-social .link:hover,
 .team-social .link:focus {
     background-color: var(--accent-color);
 }
-/* .icon .twitter-icon {
-    fill: currentColor;
-} */
-
-
 .team-social-icon:hover {
     fill: var(--light-color);
 }
 /* Наша команда конец*/
-
-
-
 
 
 /* Постоянные клиенты */
@@ -434,35 +426,29 @@ a {
     margin-top: 0;
     margin-bottom: 0;
 }
-.clients-img li {
-    list-style: none;
-    /* max-height: 90px; */
-}
-.clients-img .item {
-    display: block;
-    min-width: 170px;
-    min-height: 90px;
-}
 .clients-img .item + .item {
     margin-left: 30px;
 }
-.clients-img li {
+.clients-img .item {
     list-style: none;
     display: inline-block;
-    content: "";
     width: 168px;
     height: 88px;
     text-align: center;
-    
+
     background-color: var(--primary-background-color);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
+.item .link-svg {
+    text-decoration: none;
+    color: var(--icon-primary);
+}
 .client-logo {
-    fill: var(--icon-primary)
+    fill: currentColor;
 }
 .client-logo:hover {
     fill: var(--accent-color);
@@ -543,11 +529,12 @@ a {
     list-style: none;
     display: inline-flex;
 }
-.smm-icons a {
+.smm-icons .f-link {
     display: inline-block;
     text-align: center;
     width: 44px;
     height: 44px;
+    color: var(--light-color);
 
     background-color: rgba(255, 255, 255, 0.1);
     background-repeat: no-repeat;
@@ -555,12 +542,11 @@ a {
     background-position: center;
     border-radius: 50%;
 }
-
 .footer-icon {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    fill: var(--light-color);
+    fill: currentColor;
 }
 .smm-icons a:hover,
 .smm-icons a:focus {
@@ -568,7 +554,6 @@ a {
 }
 
 /* Соцсети Футер конец*/
-
 /* Футер конец */
 
 
