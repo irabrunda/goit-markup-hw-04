@@ -99,9 +99,6 @@ a {
     margin-left: 30px;
 }
 .contacts .mail-top {
-    /* text-decoration: none;
-    display: flex; */
-
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -110,7 +107,6 @@ a {
     color: var(--secondary-text-color);
 }
 .contacts .tel-top {
-    /* display: flex; */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -122,24 +118,13 @@ a {
     margin-right: 10px;
     padding: 0;
     background-size: contain;
-    color: inherit;
+    fill: currentColor;
 }
-.contacts .mail {
-    width: 16px;
-    height: 12px;
-}
-.contacts .tel {
-    width: 10px;
-    height: 16px;
-}
-.contacts.mail:hover {
+
+.contacts .item:hover {
     color: var(--accent-color);
 }
 
-.mail-top:hover,
-.mail-top:focus {
-    color: var(--accent-color);;
-}
 /* Навигация хедер конец */
 
 /* Герой */
@@ -382,7 +367,18 @@ a {
     margin-left: 10px;
 }
 
-
+.social-icon-a {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    border: none;
+}
+.team-social-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    fill: var(--icon-primary)
+}
 
 .team-social li {
     list-style: none;
@@ -407,11 +403,7 @@ a {
     fill: currentColor;
 } */
 
-.team-social-icon {
-    width: 20px;
-    height: 20px;
-    fill: var(--icon-primary)
-}
+
 .team-social-icon:hover {
     fill: var(--light-color);
 }
@@ -469,29 +461,11 @@ a {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.link-svg .logo-one {
-    width: 44.27px;
-    height: 49.23px;
+.client-logo {
+    fill: var(--icon-primary)
 }
-.link-svg .logo-two {
-    width: 40px;
-    height: 52px;
-}
-.link-svg .logo-three {
-    width: 41px;
-    height: 42.6px;
-}
-.link-svg .logo-four {
-    width: 79.66px;
-    height: 42.02px;
-}
-.link-svg .logo-five {
-    width: 59px;
-    height: 47px;
-}
-.link-svg .logo-six {
-    width: 88.48px;
-    height: 45.44px;
+.client-logo:hover {
+    fill: var(--accent-color);
 }
 .clients-img .item:hover,
 .clients-img .item:focus {
@@ -571,18 +545,22 @@ a {
 }
 .smm-icons a {
     display: inline-block;
+    text-align: center;
     width: 44px;
     height: 44px;
 
     background-color: rgba(255, 255, 255, 0.1);
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: auto;
+    background-size: contain;
+    background-position: center;
     border-radius: 50%;
 }
+
 .footer-icon {
     width: 20px;
     height: 20px;
+    cursor: pointer;
+    fill: var(--light-color);
 }
 .smm-icons a:hover,
 .smm-icons a:focus {
