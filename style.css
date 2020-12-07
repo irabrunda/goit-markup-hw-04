@@ -356,6 +356,7 @@ a {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
 /* Наша команда соцсети */
 .team-social {
     display: flex;
@@ -400,7 +401,6 @@ a {
     cursor: pointer;
     fill: currentColor;
 }
-
 
 .team-social .link:hover,
 .team-social .link:focus {
