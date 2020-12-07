@@ -381,18 +381,9 @@ a {
 .team-social .link + .link {
     margin-left: 10px;
 }
-.link .insta::before {
-    background-image: url(./images/icons/instagram-grey.svg);
-}
-.link .twitter {
-    background-image: url(./images/icons/twitter-grey.svg);
-}
-.link .fb {
-    background-image: url(./images/icons/facebook-grey.svg);
-}
-.link .linkedin {
-    background-image: url(./images/icons/linkedin-grey.svg);
-}
+
+
+
 .team-social li {
     list-style: none;
     display: inline-flex;
@@ -407,12 +398,22 @@ a {
     background-size: auto;
     background-position: center;
 }
+
 .team-social .link:hover,
 .team-social .link:focus {
     background-color: var(--accent-color);
 }
-.icon .twitter-icon {
+/* .icon .twitter-icon {
     fill: currentColor;
+} */
+
+.team-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-primary)
+}
+.team-social-icon:hover {
+    fill: var(--light-color);
 }
 /* Наша команда конец*/
 
