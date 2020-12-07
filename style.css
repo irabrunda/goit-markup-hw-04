@@ -237,9 +237,10 @@ a {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-/* ИКОНКИ ИЗ СПРАЙТА */
 .feature-icon-div {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     width: 270px;
     height: 120px;
@@ -357,7 +358,9 @@ a {
 }
 /* Наша команда соцсети */
 .team-social {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     outline: 1px dotted violet;
@@ -366,12 +369,30 @@ a {
 .team-social .link + .link {
     margin-left: 10px;
 }
+.team-social .link {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    box-shadow: none;
+
+    background-color: var(--primary-background-color);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 .link .social-icon {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0;
     border: none;
+
+    background-position: center;
     color: var(--icon-primary);
 }
 .team-social-icon {
@@ -381,20 +402,7 @@ a {
     fill: currentColor;
 }
 
-.team-social li {
-    list-style: none;
-    display: inline-flex;
-    content: "";
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    box-shadow: none;
 
-    background-color: var(--primary-background-color);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-}
 .team-social .link:hover,
 .team-social .link:focus {
     background-color: var(--accent-color);
@@ -431,7 +439,9 @@ a {
 }
 .clients-img .item {
     list-style: none;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 168px;
     height: 88px;
     text-align: center;
@@ -444,6 +454,7 @@ a {
     border-radius: 4px;
 }
 .item .link-svg {
+    display: flex;
     text-decoration: none;
     color: var(--icon-primary);
 }
@@ -518,20 +529,20 @@ a {
     color: var(--light-color);
 }
 .smm-icons {
-    display: inline-flex;
+    display: flex;
     margin: 0;
     padding: 0;
+}
+.smm-icons .item {
+    list-style: none;
 }
 .smm-icons .item + .item {
     margin-left: 10px;
 }
-.smm-icons li {
-    list-style: none;
-    display: inline-flex;
-}
 .smm-icons .f-link {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     color: var(--light-color);
@@ -558,7 +569,6 @@ a {
 
 
 /* Портфолио */
-
 
 /* Фильтры */
 .filters {
