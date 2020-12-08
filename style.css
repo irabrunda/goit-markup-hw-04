@@ -116,8 +116,6 @@ a {
 }
 .contacts-icon {
     margin-right: 10px;
-    padding: 0;
-    background-size: contain;
     fill: currentColor;
 }
 
@@ -141,9 +139,10 @@ a {
     align-items: center;
 }
 .hero-bg {
+    margin: 0 auto;
+    max-width: 1600px;
     background-color: var(--secondary-background-color);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/Img.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -256,8 +255,6 @@ a {
     width: 70px;
     height: 70px;
 }
-/* ИКОНКИ ИЗ СПРАЙТА конец */
-
 /* Особенности конец*/
 
 
@@ -372,17 +369,7 @@ a {
 .team-social .link {
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
     box-shadow: none;
-
-    background-color: var(--primary-background-color);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 .link .social-icon {
     text-decoration: none;
@@ -392,8 +379,16 @@ a {
     padding: 0;
     border: none;
 
-    background-position: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
     color: var(--icon-primary);
+    background-color: var(--primary-background-color);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position: center;
 }
 .team-social-icon {
     width: 20px;
@@ -402,12 +397,10 @@ a {
     fill: currentColor;
 }
 
-.team-social .link:hover,
-.team-social .link:focus {
+.link .social-icon:hover,
+.link .social-icon:focus {
+    color: var(--light-color);
     background-color: var(--accent-color);
-}
-.team-social-icon:hover {
-    fill: var(--light-color);
 }
 /* Наша команда конец*/
 
@@ -436,15 +429,21 @@ a {
 .clients-img .item + .item {
     margin-left: 30px;
 }
+
 .clients-img .item {
     list-style: none;
-    display: inline-flex;
+    display: flex;
+}
+.clients-img .link-svg {
+    text-decoration: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 168px;
     height: 88px;
     text-align: center;
 
+    color: var(--icon-primary);
     background-color: var(--primary-background-color);
     background-repeat: no-repeat;
     background-size: contain;
@@ -452,21 +451,14 @@ a {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.item .link-svg {
-    display: flex;
-    text-decoration: none;
-    color: var(--icon-primary);
-}
 .client-logo {
     fill: currentColor;
 }
-.client-logo:hover {
-    fill: var(--accent-color);
+.clients-img .link-svg:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color) ;
 }
-.clients-img .item:hover,
-.clients-img .item:focus {
-    border: 1px solid var(--accent-color);
-}
+
 /* Постоянные клиенты конец */
 
 
@@ -480,7 +472,7 @@ a {
 }
 .footer-div {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .footer .logo-footer {
     display: block;
@@ -516,7 +508,7 @@ a {
     display: block;
     margin-left: 70px;
 }
-.social-links h3 {
+.social-links p {
     margin: 0 0 20px 0;
     
     font-style: normal;
@@ -628,7 +620,7 @@ a {
 .products .item:nth-child(3n+3) {
     margin-right: 0;
 } 
-.products .item:hover {
+.products .product-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .products img {
